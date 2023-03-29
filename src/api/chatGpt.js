@@ -1,5 +1,5 @@
 export const searchRequest = async (search, query) => {
-  const apiKey = "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";
+  const apiKey = process.env.VUE_APP_CHAT_GPT_API_KEY;
 
   const response = await fetch("https://api.openai.com/v1/completions", {
     method: "POST",
